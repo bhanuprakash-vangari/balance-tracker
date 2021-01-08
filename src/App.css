@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Lato&display=swap");
 
 :root {
   --box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
@@ -16,25 +16,24 @@ body {
   justify-content: center;
   min-height: 100vh;
   margin: 0;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
 }
 
 .container {
   margin: 30px auto;
   width: 350px;
 }
-h2{
-  color: #fff;
+h2 {
+  color: rgb(104, 87, 255);
 }
 h1 {
   letter-spacing: 1px;
   margin: 0;
-  color: #fff;
-  animation: fade 2s ease forwards;
+  color: rgb(132, 255, 138);
 }
 
 h3 {
-  color: #fff;
+  color: rgb(255, 255, 255);
   border-bottom: 1px solid #bbb;
   padding-bottom: 10px;
   margin: 40px 0 10px;
@@ -48,8 +47,8 @@ h4 {
 
 .inc-exp-container {
   background-color: #404040;
-  /* animation: fade 2s ease forwards; */
-  box-shadow: 5px,3px #fff;
+  animation: change 3s ease forwards;
+  box-shadow: 5px, 3px #fff;
   padding: 20px;
   display: flex;
   justify-content: space-between;
@@ -77,7 +76,7 @@ h4 {
 }
 
 .money.minus {
-  color: #c0392b;
+  color: #ff7b6d;
 }
 
 label {
@@ -86,8 +85,8 @@ label {
   color: #fff;
 }
 
-input[type='text'],
-input[type='number'] {
+input[type="text"],
+input[type="number"] {
   border: 1px solid #585858;
   border-radius: 2px;
   display: block;
@@ -102,6 +101,7 @@ input[type='number'] {
 .btn {
   cursor: pointer;
   background-color: #1f1846;
+  animation: changeBtn 2s ease forwards;
   box-shadow: var(--box-shadow);
   border-radius: 4px;
   color: #fff;
@@ -112,7 +112,6 @@ input[type='number'] {
   padding: 10px;
   width: 100%;
 }
-
 .btn:focus,
 .delete-btn:focus {
   outline: 0;
@@ -127,6 +126,7 @@ input[type='number'] {
 .list li {
   background-color: #404040;
   animation: fade 3s ease forwards;
+  animation: change 3s ease forwards;
   box-shadow: var(--box-shadow);
   color: #fff;
   display: flex;
@@ -166,10 +166,27 @@ input[type='number'] {
 }
 
 @keyframes fade {
-  from{
+  from {
     opacity: 0;
   }
-  to{
-    opacity: 1; 
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes change {
+  from {
+    background-color: #121212;
+  }
+  to {
+    background-color: #404040;
+  }
+}
+@keyframes changeBtn {
+  from {
+    background-color: #121212;
+  }
+  to {
+    background-color: #1f1846;
   }
 }
