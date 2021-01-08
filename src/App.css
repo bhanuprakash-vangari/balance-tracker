@@ -17,7 +17,6 @@ body {
   min-height: 100vh;
   margin: 0;
   font-family: 'Lato', sans-serif;
-  animation: fade 1s ease forwards;
 }
 
 .container {
@@ -31,6 +30,7 @@ h1 {
   letter-spacing: 1px;
   margin: 0;
   color: #fff;
+  animation: fade 2s ease forwards;
 }
 
 h3 {
@@ -48,6 +48,7 @@ h4 {
 
 .inc-exp-container {
   background-color: #404040;
+  /* animation: fade 2s ease forwards; */
   box-shadow: 5px,3px #fff;
   padding: 20px;
   display: flex;
@@ -125,6 +126,7 @@ input[type='number'] {
 
 .list li {
   background-color: #404040;
+  animation: fade 3s ease forwards;
   box-shadow: var(--box-shadow);
   color: #fff;
   display: flex;
