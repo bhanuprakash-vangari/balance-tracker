@@ -17,6 +17,7 @@ body {
   min-height: 100vh;
   margin: 0;
   font-family: 'Lato', sans-serif;
+  animation: fade 1s ease forwards;
 }
 
 .container {
@@ -160,4 +161,13 @@ input[type='number'] {
 
 .list li:hover .delete-btn {
   opacity: 1;
+}
+
+@keyframes fade {
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1; 
+  }
 }
